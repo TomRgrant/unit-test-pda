@@ -57,7 +57,7 @@ describe('Calculator', () => {
     toEqual('15');
   })
 
-  it('should divide 21 by 7 get 3', () => {
+  it('should concatenate multiple number button clicks', () => {
     const button2 = container.getByTestId('number2');
     const button1 = container.getByTestId('number1');
     const divide = container.getByTestId('operator-divide');
@@ -73,7 +73,7 @@ describe('Calculator', () => {
     toEqual('3');
   })
 
-  it('should 2 plus plus get 6', () => {
+  it('should chain multiple operations together', () => {
     const button2 = container.getByTestId('number2');
     const add = container.getByTestId('operator-add');
     const equal = container.getByTestId('operator-equals');
@@ -86,7 +86,7 @@ describe('Calculator', () => {
     toEqual('6');
   })
 
-  it('should add 1 to 4 get 5', () => {
+  it('should clear the running total without affecting the calculation', () => {
     const button4 = container.getByTestId('number4');
     const add = container.getByTestId('operator-add');
     const button1 = container.getByTestId('number1');
